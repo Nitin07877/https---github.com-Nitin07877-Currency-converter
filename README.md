@@ -1,115 +1,101 @@
--Currency Converter
+Currency Converter
 
 A simple and user-friendly Currency Converter web application that converts one currency into another using real-time exchange rates. This project is built using HTML, CSS, and JavaScript, with a separate data file for country and currency codes.
 
--Features
+Project Features
 
 Convert between multiple international currencies
 
 Real-time exchange rate conversion
 
-Uses Frankfurter API (no API key required)
+Uses Frankfurter API with no API key required
 
-Currency & country data stored in codes.js
+Country and currency data stored in a separate file called codes.js
 
-Responsive and clean UI
+Clean and responsive user interface
 
--Tech Stack
+Tech Stack
 
-HTML – Structure of the application
+HTML
+Used for structuring the application
 
-CSS – Styling and layout
+CSS
+Used for styling and layout
 
-JavaScript – Logic, API integration, DOM manipulation
+JavaScript
+Used for logic, API integration, and DOM manipulation
 
--Project Structure
+Project Structure
+
 currency-converter
-│
-├── index.html
+index.html
+style.css
+script.js
+codes.js (contains country and currency code data)
+README.md
 
-├── style.css
+How the Application Works
 
-├── script.js
+The user enters the amount to convert
 
-├── codes.js   // Contains country & currency code data
+Currency options are loaded from codes.js
 
-└── README.md
+The user selects the source and target currencies
 
--How It Works
+The app fetches live exchange rates from the API
 
-User enters the amount to convert
+The converted amount is displayed on the screen
 
-Currency options are populated using codes.js
+API Used
 
-User selects From and To currencies
+Frankfurter Exchange Rate API
 
-App fetches real-time exchange rates from the API
+This project uses the Frankfurter API to fetch real-time currency exchange rates. The API is free to use and does not require an API key.
 
-Converted amount is displayed instantly
+API Endpoint Example
 
--API Used – Frankfurter API
-
-This project uses the Frankfurter Exchange Rate API to fetch real-time currency conversion rates.
-
- Why Frankfurter API?
-
-Free and open-source
-
-No API key required
-
-Simple and fast JSON responses
-
-Supports multiple currencies
-
--API Endpoint Used
 https://api.frankfurter.app/latest?from=USD&to=INR
 
- Sample Response
+Sample API Response
+
 {
-  "amount": 1,
-  "base": "USD",
-  "date": "2025-12-05",
-  "rates": {
-    "INR": 89.94
-  }
+"amount": 1,
+"base": "USD",
+"date": "2025-12-05",
+"rates": {
+"INR": 89.94
+}
 }
 
+Explanation
+base represents the source currency
+rates contain the converted currency value
+date shows the last update date
 
-base → Source currency
+Installation and Usage
 
-rates → Target currency & conversion rate
-
-date → Last updated date
-
- Installation & Usage
-
--Clone the repository
-
+Clone the repository
 git clone https://github.com/your-username/currency-converter.git
 
-
-Navigate to the project folder
-
-cd currency-converter
-
+Open the project folder
 
 Open index.html in your browser
 
- Learning Outcomes
+Learning Outcomes
 
-API integration using JavaScript
+Understanding API integration in JavaScript
 
-Working with external data files (codes.js)
+Working with external JavaScript data files
 
-DOM manipulation & event handling
+DOM manipulation and event handling
 
-Building a real-world frontend project
+Structuring a real-world frontend project
 
- Contributing
+Contributing
 
-Contributions are welcome!
-Feel free to fork the repository and submit a pull request.
+Contributions are welcome.
+Fork the repository and submit a pull request.
 
--License
+License
 
 This project is licensed under the MIT License.
