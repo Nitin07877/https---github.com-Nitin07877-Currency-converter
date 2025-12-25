@@ -1,8 +1,8 @@
-Currency Converter
+-Currency Converter
 
 A simple and user-friendly Currency Converter web application that converts one currency into another using real-time exchange rates. This project is built using HTML, CSS, and JavaScript, with a separate data file for country and currency codes.
 
- Features
+-Features
 
 Convert between multiple international currencies
 
@@ -14,7 +14,7 @@ Currency & country data stored in codes.js
 
 Responsive and clean UI
 
- Tech Stack
+-Tech Stack
 
 HTML – Structure of the application
 
@@ -22,16 +22,20 @@ CSS – Styling and layout
 
 JavaScript – Logic, API integration, DOM manipulation
 
-📂 Project Structure
-currency-converter/
+-Project Structure
+currency-converter
 │
 ├── index.html
+
 ├── style.css
+
 ├── script.js
+
 ├── codes.js   // Contains country & currency code data
+
 └── README.md
 
- How It Works
+-How It Works
 
 User enters the amount to convert
 
@@ -43,7 +47,7 @@ App fetches real-time exchange rates from the API
 
 Converted amount is displayed instantly
 
- API Used – Frankfurter API
+-API Used – Frankfurter API
 
 This project uses the Frankfurter Exchange Rate API to fetch real-time currency conversion rates.
 
@@ -57,7 +61,7 @@ Simple and fast JSON responses
 
 Supports multiple currencies
 
- API Endpoint Used
+-API Endpoint Used
 https://api.frankfurter.app/latest?from=USD&to=INR
 
  Sample Response
@@ -79,7 +83,7 @@ date → Last updated date
 
  Installation & Usage
 
-Clone the repository
+-Clone the repository
 
 git clone https://github.com/your-username/currency-converter.git
 
@@ -106,6 +110,6 @@ Building a real-world frontend project
 Contributions are welcome!
 Feel free to fork the repository and submit a pull request.
 
-📜 License
+-License
 
 This project is licensed under the MIT License.
